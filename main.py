@@ -18,6 +18,13 @@ def determine_num_of_buyers(num_of_popsicles, num_of_customers, price):
 
 
 def simulate_day(num_of_popsicles, price, num_of_customers = 100):
+    """
+
+    :param num_of_popsicles:
+    :param price:
+    :param num_of_customers:
+    :return:
+    """
     num_of_buyers = determine_num_of_buyers(num_of_popsicles, num_of_customers, price)
     print(f"Customers today: {num_of_buyers}")
     income = num_of_buyers * price               # Income for the day
