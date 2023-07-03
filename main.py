@@ -30,7 +30,6 @@ def simulate_day(num_of_popsicles, price, num_of_customers = 100):
     income = num_of_buyers * price               # Income for the day
     return income
 
-    return income
 
 
 def main():
