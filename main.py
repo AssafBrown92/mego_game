@@ -1,5 +1,10 @@
 import random
 
+
+def add_git_branch():
+    return "https://github.com/AssafBrown92/mego_game.git"
+
+
 def determine_num_of_buyers(num_of_popsicles, num_of_customers, price):
     """
     determine the number of buyers, based on pre-existing information
@@ -10,14 +15,14 @@ def determine_num_of_buyers(num_of_popsicles, num_of_customers, price):
     """
     num_of_buyers = 0
     for customer in range(num_of_customers):
-        willing_to_pay = random.uniform(1,3)
+        willing_to_pay = random.uniform(1, 3)
         if willing_to_pay > price:
             if num_of_buyers < num_of_popsicles:
                 num_of_buyers += 1
     return num_of_buyers
 
 
-def simulate_day(num_of_popsicles, price, num_of_customers = 100):
+def simulate_day(num_of_popsicles, price, num_of_customers=100):
     """
 
     :param num_of_popsicles:
@@ -27,7 +32,7 @@ def simulate_day(num_of_popsicles, price, num_of_customers = 100):
     """
     num_of_buyers = determine_num_of_buyers(num_of_popsicles, num_of_customers, price)
     print(f"Customers today: {num_of_buyers}")
-    income = num_of_buyers * price               # Income for the day
+    income = num_of_buyers * price  # Income for the day
     return income
 
     return income
@@ -55,6 +60,7 @@ def main():
 
     # print(f"\nTotal income: ${total_income}")
     print("Game Over!")
+
 
 if __name__ == "__main__":
     main()
