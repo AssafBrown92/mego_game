@@ -6,9 +6,6 @@ MIN_TEMP = 17
 MAX_TEMP = 42
 CUSTOMERS_PER_DAY = 50
 
-def add_new_git_branch():
-    return "https://github.com/AssafBrown92/mego_game.git"
-
 
 def determine_num_of_buyers(num_of_popsicles, num_of_customers, price, temperature):
     """
@@ -19,7 +16,7 @@ def determine_num_of_buyers(num_of_popsicles, num_of_customers, price, temperatu
     :return: the number of buyers
     """
 
-    temperature_bias = MIN_PRICE + (temperature - MIN_TEMP) * ((MAX_PRICE-MIN_PRICE) / (MAX_TEMP-MIN_TEMP))
+    temperature_bias = MIN_PRICE + (temperature - MIN_TEMP) * ((MAX_PRICE - MIN_PRICE) / (MAX_TEMP - MIN_TEMP))
     num_of_buyers = 0
     customers = 0
 
@@ -45,7 +42,6 @@ def simulate_day(num_of_popsicles, price, num_of_customers=100):
     print(f"Customers today: {num_of_buyers}")
     income = num_of_buyers * price  # Income for the day
     return income
-
 
 
 def main():

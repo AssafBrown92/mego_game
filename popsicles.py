@@ -2,8 +2,9 @@ from datetime import date, timedelta
 
 
 class Popsicles:
-    def __init__(self, price, flavor, color, expiration_date, popularity):
-        self._price = price
+    def __init__(self, cost, flavor, color, expiration_date, popularity):
+        self._cost = cost
+        self._price = cost * 2.5
         self._flavor = flavor
         self._color = color
         self._expiration_date = expiration_date
