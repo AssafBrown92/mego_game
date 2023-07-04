@@ -49,6 +49,9 @@ def simulate_day(num_of_popsicles, price, num_of_customers=100):
 
 def main():
     buying_price = 1
+    print("Please write the amount of money you start with: ")
+    total_amount = int(input('> '))
+
     while True:
         print(f"the price of each popsicles is: {buying_price}")
         print("Enter how many popsicles you want to buy (or 'q' to quit):")
@@ -66,6 +69,11 @@ def main():
         expense = buying_price * num_of_popsicles
         income = simulate_day(num_of_popsicles, price)
         print(f"Income for the day: ${income - expense}\n")
+        total_amount += (income - expense)
+        if total_amount >= 0:
+            print(f"Your amount of money now is: ${total_amount}\n")
+        else:
+            print(f"You are now in debt of: ${total_amount}\n")
 
     # print(f"\nTotal income: ${total_income}")
     print("Game Over!")
