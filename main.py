@@ -22,6 +22,7 @@ def determine_num_of_buyers(num_of_popsicles, num_of_customers, price, temperatu
     temperature_bias = MIN_PRICE + (temperature - MIN_TEMP) * ((MAX_PRICE-MIN_PRICE) / (MAX_TEMP-MIN_TEMP))
     num_of_buyers = 0
     customers = 0
+
     while num_of_buyers < num_of_popsicles and customers < CUSTOMERS_PER_DAY:
         willing_to_pay = random.triangular(MIN_PRICE, MAX_PRICE, temperature_bias)
         if willing_to_pay > price:
