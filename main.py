@@ -1,6 +1,6 @@
 import random
 
-MIN_PRICE = 10
+MIN_PRICE = 100
 MAX_PRICE = 10
 MIN_TEMP = 17
 MAX_TEMP = 42
