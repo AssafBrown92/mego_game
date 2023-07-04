@@ -6,7 +6,7 @@ MIN_TEMP = 17
 MAX_TEMP = 42
 CUSTOMERS_PER_DAY = 50
 
-def add_git_branch():
+def add_new_git_branch():
     return "https://github.com/AssafBrown92/mego_game.git"
 
 
