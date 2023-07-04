@@ -1,7 +1,7 @@
 import random
 
 
-def add_git_branch():
+def add_new_git_branch():
     return "https://github.com/AssafBrown92/mego_game.git"
 
 
