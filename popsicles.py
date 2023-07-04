@@ -37,7 +37,6 @@ class Popsicles:
     def expiration_date(self):
         return self._expiration_date
 
-
     @expiration_date.setter
     def expiration_date(self, expiration_date):
         self._expiration_date = expiration_date
@@ -49,8 +48,6 @@ class Popsicles:
     @popularity.setter
     def popularity(self, popularity):
         self._popularity = popularity
-
-
 
     def set_expiration_date(self):
         current_date = date.today()
